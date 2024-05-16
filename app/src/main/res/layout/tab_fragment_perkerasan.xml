@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/tabPerkerasanFormShow"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="2dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/colorPrimary">
+
+                <TextView
+                    android:padding="5dp"
+                    android:paddingStart="15dp"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:text="Lebar "
+                    android:textColor="@android:color/background_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="10dp"
+                android:layout_height="match_parent"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="2dp"
+                android:layout_weight="2.5"
+                app:cardBackgroundColor="@color/colorPrimaryDark">
+
+                <TextView
+                    android:id="@+id/tabPerkerasanTxLebar"
+                    android:padding="5dp"
+                    android:paddingStart="15dp"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:text="Tipe "
+                    android:textColor="@android:color/background_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/tabLahanIconTipe"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_info" />
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <include layout="@layout/tab_toolbar" />
+
+
+    <ScrollView
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/tabPerkerasanFormEdit"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:paddingEnd="10dp"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="Lebar : "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_gravity="bottom|end"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="3"
+                        app:cardCornerRadius="5dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/tabPerkerasanEdLebar"
+                            android:layout_margin="5dp"
+                            android:background="@android:color/background_light"
+                            android:textSize="14dp"
+                            android:paddingLeft="10dp"
+                            android:imeOptions="actionDone"
+                            android:inputType="numberDecimal"
+                            android:maxLength="4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:textSize="11dp"
+                        android:textStyle="italic|bold"
+                        android:textColor="#AA2929"
+                        android:text="Meter"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <include
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                layout="@layout/tab_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    tools:context="com.example.roadmanagement.kaltara.Formu.DetailSaluran"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbaj"/>
+
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/kondisibahujudul"
+            android:layout_width="match_parent"
+            android:text="Kondisi Bahu Left"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="16pt"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/listputih"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="STA"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="12sp"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/kondisibahusta"
+                    android:paddingRight="10dp"
+                    android:text="0.200-0.300"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/listputih">
+
+                <TextView
+                    android:layout_width="57dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:text="KM"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/kondisibahukm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="10dp"
+                    android:text="0.200-0.300"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/listputih"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/satubahu"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Tipe :"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="12sp"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/kondisibahutipe"
+                        android:paddingRight="10dp"
+                        android:text="Diperkeras"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/satubahu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:text="Lebar :"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="12sp"
+                            android:paddingRight="5dp"
+                            android:paddingLeft="10dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/kondisibahulebar"
+                            android:paddingRight="10dp"
+                            android:text="0.5 meter"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:background="@drawable/listabu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/kondisibahurecycle"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:id="@+id/kondisitambahfotobahu"
+                android:src="@drawable/icon_tambah"
+                android:layout_width="50dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="3"
+                android:text="Kerusakan"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/background_dark"
+                android:textSize="8pt"
+                android:layout_alignParentLeft="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text=":"
+                android:layout_weight="0.5"
+                android:textColor="@android:color/background_dark"
+                android:textSize="8pt"
+                android:textAlignment="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:layout_weight="5"
+                android:id="@+id/kondisibahukerusakan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="3"
+                android:text="Panjang"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/background_dark"
+                android:textSize="8pt"
+                android:layout_alignParentLeft="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text=":"
+                android:layout_weight="0.5"
+                android:textColor="@android:color/background_dark"
+                android:textSize="8pt"
+                android:textAlignment="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textSize="16dp"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:background="@drawable/listputih"
+                android:layout_weight="2"
+                android:id="@+id/kondisibahupanjang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+            </EditText>
+
+            <TextView
+                android:textSize="12sp"
+                android:text="meter"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/background_dark"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="3"
+                android:text="Tinggi/dalam"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/background_dark"
+                android:textSize="8pt"
+                android:layout_alignParentLeft="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text=":"
+                android:layout_weight="0.5"
+                android:textColor="@android:color/background_dark"
+                android:textSize="8pt"
+                android:textAlignment="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textSize="16dp"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:background="@drawable/listputih"
+                android:layout_weight="2"
+                android:id="@+id/kondisibahudalam"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+            </EditText>
+
+            <TextView
+                android:textSize="12sp"
+                android:text="meter"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/background_dark"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_centerInParent="true"
+                android:text="Save"
+                android:background="#2647d6"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold"
+                android:id="@+id/kondisibahubutton"
+                android:layout_marginBottom="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

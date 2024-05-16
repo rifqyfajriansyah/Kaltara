@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@drawable/listbiru"
+    android:layout_height="wrap_content"
+    style="@style/Dexter.Internal.Theme.Transparent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            tools:src="@drawable/icon_tambah"
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:id="@+id/popupimage"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="@drawable/listbiru"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:id="@+id/hapusgambar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"/>
+    </RelativeLayout>
+
+</LinearLayout>

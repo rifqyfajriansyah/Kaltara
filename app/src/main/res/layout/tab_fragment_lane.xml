@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/tabLaneFormShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_weight="1"
+            android:background="@drawable/listabu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                app:cardBackgroundColor="@color/colorPrimary">
+
+                <TextView
+                    android:layout_margin="2dp"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:text="Tipe "
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/background_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="2dp"
+                    android:layout_weight="2.5"
+                    app:cardBackgroundColor="@color/colorPrimaryDark">
+
+                    <TextView
+                        android:id="@+id/tabLaneTxTipe"
+                        android:layout_margin="5dp"
+                        android:paddingStart="10dp"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:text="Tipe "
+                        android:textColor="@android:color/background_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/tabSaluranIconTipe"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_info" />
+
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!--<androidx.cardview.widget.CardView
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                app:cardBackgroundColor="@color/colorPrimary">
+
+                <TextView
+                    android:layout_margin="2dp"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:text="Lebar "
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/background_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="2dp"
+                    android:layout_weight="2.5"
+                    app:cardBackgroundColor="@color/colorPrimaryDark">
+
+                    <TextView
+                        android:id="@+id/tabBahuTxLebar"
+                        android:layout_margin="5dp"
+                        android:paddingStart="10dp"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:text="Tipe "
+                        android:textColor="@android:color/background_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/tabSaluranIconPenampang"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_info" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_weight="1"
+            android:background="@drawable/listabu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                app:cardBackgroundColor="@color/colorPrimary">
+
+                <TextView
+                    android:layout_margin="2dp"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:text="Lebar"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/background_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="2dp"
+                    android:layout_weight="2.5"
+                    app:cardBackgroundColor="@color/colorPrimaryDark">
+
+                    <TextView
+                        android:id="@+id/tabLaneTxLebar"
+                        android:layout_margin="5dp"
+                        android:paddingStart="10dp"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:text="Tipe "
+                        android:textColor="@android:color/background_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/tabSaluranIconAir"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_info" />
+
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!--<androidx.cardview.widget.CardView
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                app:cardBackgroundColor="@color/colorPrimary">
+
+                <TextView
+                    android:layout_margin="2dp"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:text="Kemiringan Persen "
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/background_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="2dp"
+                    android:layout_weight="2.5"
+                    app:cardBackgroundColor="@color/colorPrimaryDark">
+
+                    <TextView
+                        android:id="@+id/tabBahuTxPersen"
+                        android:layout_margin="5dp"
+                        android:paddingStart="10dp"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:text="Tipe "
+                        android:textColor="@android:color/background_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/tabSaluranIconSedimen"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_info" />
+
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <include layout="@layout/tab_toolbar" />
+
+    <!--<ScrollView
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/tabLaneFormEdit"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:text="Tipe Surface"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/tabLaneSpinTipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></Spinner>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textAlignment="viewEnd"
+                    android:layout_weight="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Lebar (b) : "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="3"
+                        app:cardCornerRadius="5dp">
+
+                        <EditText
+                            android:id="@+id/tabLaneEdLebar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@android:color/background_light"
+                            android:imeOptions="actionDone"
+                            android:inputType="numberDecimal"
+                            android:maxLength="4"
+                            android:paddingLeft="10dp"
+                            android:textSize="14dp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Meter"
+                        android:textColor="#AA2929"
+                        android:textSize="11dp"
+                        android:textStyle="italic|bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tabLaneFormDrain"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="2"
+                        android:text="Kemiringan : "
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="3"
+                            app:cardCornerRadius="5dp">
+
+                            <EditText
+                                android:id="@+id/tabLaneEdDerajat"
+                                android:layout_width="125dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@android:color/background_light"
+                                android:imeOptions="actionDone"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:paddingLeft="10dp"
+                                android:textSize="14dp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Derajat"
+                            android:textColor="#AA2929"
+                            android:textSize="11dp"
+                            android:textStyle="italic|bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textAlignment="viewEnd"
+                        android:layout_weight="2"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            app:cardBackgroundColor="#d9d9d9"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="3"
+                            app:cardCornerRadius="5dp">
+
+                            <TextView
+                                android:id="@+id/tabLaneEdPersen"
+                                android:layout_width="119dp"
+                                android:layout_height="29dp"
+                                android:layout_margin="5dp"
+                                android:imeOptions="actionDone"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:paddingLeft="10dp"
+                                android:textSize="14dp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Persen"
+                            android:textColor="#AA2929"
+                            android:textSize="11dp"
+                            android:textStyle="italic|bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Kearah"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardBackgroundColor="#d9d9d9"
+                    app:cardCornerRadius="3dp">
+
+
+                    <RadioGroup
+                        android:id="@+id/tabLaneFormPenampang"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_marginBottom="2.5dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+
+                                <RadioButton
+                                    android:id="@+id/tabLaneRadioLuar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="Luar Jalan"
+                                    android:textColor="#4159BE"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_weight="1"
+                                app:cardCornerRadius="5dp"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:src="@drawable/arah_luar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"/>
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginBottom="2.5dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+
+                                <RadioButton
+                                    android:id="@+id/tabLaneRadioDalam"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="Dalam Jalan"
+                                    android:textColor="#4159BE"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+
+                            </LinearLayout>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_weight="1"
+                                app:cardCornerRadius="5dp"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:src="@drawable/arah_dalam"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"/>
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+
+
+                    </RadioGroup>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Kondisi kemiringan permukaan perkerasan"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="2.5"
+                            app:cardCornerRadius="5dp">
+
+                            <Spinner
+                                android:id="@+id/tabLaneSpinKondisi"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp" />
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:textAlignment="viewEnd"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                layout="@layout/tab_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--</ScrollView>-->
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.rifqy.kaltara">
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.proximity"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.gyroscope"
+        android:required="true" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:remove="android:maxSdkVersion" />
+    <uses-permission
+        android:name="android.permission.MANAGE_DOCUMENTS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_app"
+        android:label="Road Management"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/icon_app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.roadmanagement.kaltara.FormTab.FormTabUtama"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.CameraLoc.Ztes"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.example.roadmanagement.kaltara.CameraLoc.PicturePreview"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.CameraLoc.Cameraku"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity> <!-- <activity android:name="com.example.roadmanagement.kaltara.RoadView.RoadViewIndex" /> -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.example.roadmanagement.kaltara.FormTerusan.MainFormTerusan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.Formu.FormLaneUtama"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.Formu.UnformEdit"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.Formu.UnForm"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.kolektif.MenuKolektif"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.sinkronForm.SinkronUtama"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name="com.example.roadmanagement.kaltara.lokasi.MapActivity" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.GetSemuaImage.ListImage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.UpdateForm.FormDetailSegment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.kolektif.KolektifSegmentku"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.UpdateForm.FormDetailLane"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.UpdateForm.FormDetailMedian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.UpdateForm.FormDetailBahu"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.UpdateForm.FormDetailSaluran"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.UpdateForm.FormDetailLahan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.kolektif.KolektifLaneku"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.kolektif.KolektifMedianku"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.kolektif.KolektifBahuku"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.kolektif.KolektifSaluranku"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.cleardata.ClearDataLocal"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.kolektif.KolektifLahanku"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.kolektif.KolektifMenuutama"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.roadmanagement.kaltara.lokasi.PilihLokasi"
+            android:label="@string/title_activity_pilih_lokasi"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.example.roadmanagement.kaltara.Formu.FormUtama"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.Formu.DetailSegment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--<activity
+            android:name="com.example.roadmanagement.kaltara.Formu.DetailLahan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.Formu.DetailSaluran"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.Formu.DetailLane"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.Formu.DetailBahu"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.Formu.DetailMedian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />-->
+        <activity
+            android:name="com.example.roadmanagement.kaltara.Formu.KondisiSaluran"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.Formu.KondisiBahu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.Formu.KondisiLane"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.Formu.KondisiMedian"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.lokasi.Dashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.Menuutama"
+            android:label="@string/title_activity_menuutama"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.Tabel.LihatTabel"
+            android:label="@string/title_activity_lihat_tabel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.roadmanagement.kaltara.lokasi.Ceklokasi" />
+        <activity
+            android:name="com.example.roadmanagement.kaltara.Dokumen.DokumenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

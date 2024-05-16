@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/colorPrimary"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/tabToolEdit"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_edit"/>
+
+        <ImageView
+            android:id="@+id/tabToolSave"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_save"/>
+
+        <ImageView
+            android:id="@+id/tabToolClose"
+            android:rotation="45"
+            android:layout_marginLeft="20dp"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_close"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/tabToolExpand"
+            android:rotation="180"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_expand"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.cardview.widget.CardView>

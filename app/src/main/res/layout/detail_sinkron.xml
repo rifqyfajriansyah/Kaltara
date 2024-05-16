@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="4dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/sinkronrow"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:textSize="16dp"
+                android:id="@+id/textsinkron"
+                android:paddingLeft="5dp"
+                android:text="blabalallala"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/deleteSinkron"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:src="@drawable/cleardata"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

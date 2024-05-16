@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/unformbahujudul"
+                android:layout_width="match_parent"
+                android:text="Bahu"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="16pt"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:text="Tipe Bahu "
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/unformtipebahu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></Spinner>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:text="Lebar Bahu"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_weight="3"
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+
+
+                    <EditText
+                        android:id="@+id/unformlebarbahu"
+                        android:layout_margin="5dp"
+                        android:background="@android:color/background_light"
+                        android:textSize="14dp"
+                        android:paddingLeft="10dp"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:maxLength="4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="25dp"
+                    android:text="Meter"
+                    android:textColor="#AA2929"
+                    android:textSize="11dp"
+                    android:textStyle="italic|bold" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:text="Tipe Bahu Inner"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/unformtipebahuinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></Spinner>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:text="Lebar Bahu Inner"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_weight="3"
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+
+
+                    <EditText
+                        android:id="@+id/unformlebarbahuinner"
+                        android:layout_margin="5dp"
+                        android:background="@android:color/background_light"
+                        android:textSize="14dp"
+                        android:paddingLeft="10dp"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:maxLength="4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="25dp"
+                    android:text="Meter"
+                    android:textColor="#AA2929"
+                    android:textSize="11dp"
+                    android:textStyle="italic|bold" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:background="@drawable/listabu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/unformbahurecycle"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:id="@+id/unformbahufoto"
+                    android:src="@drawable/icon_tambah"
+                    android:layout_width="50dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/dbahukondisi"
+                android:orientation="horizontal"
+                android:background="@drawable/listbiru"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:text="Kondisi  :"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:text="Baik"
+                    android:textSize="14sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="10dp"
+                    android:layout_centerInParent="true"
+                    app:cardBackgroundColor="#4159BE"
+                    android:layout_marginBottom="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:text="Save"
+                        android:layout_margin="3dp"
+                        android:textColor="@android:color/background_light"
+                        android:textStyle="bold"
+                        android:id="@+id/unformbahubutton"
+                        android:background="#4159BE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

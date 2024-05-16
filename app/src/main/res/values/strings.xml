@@ -1,0 +1,389 @@
+<resources>
+    <string name="app_name">Kaltara</string>
+    <string name="title_activity_form">Form</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login2">Sign in</string>
+
+
+    <string name="permission_dialog">Accessing Location Permissions required</string>
+    <string name="permission">Anda harus mengizinkan aplikasi agar bisa memakai fitur ini</string>
+    <string name="go_to_permissions_settings">Go to App settings and enable permissions</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+
+    <string name="title_activity_pilih_lokasi">Map</string>
+
+    <string name="no_location_detected">
+        No location detected. Make sure location is enabled on the device.
+    </string>
+
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
+    <string name="settings">Settings</string>
+
+
+    <string-array name="tipe_lahan">
+        <item>--Pilih--</item>
+        <item>T1 (tebing less 1m)</item>
+        <item>T2 (tebing 1-5m)</item>
+        <item>T3 (tebing more 5m)</item>
+        <item>L1 (lembah less 1m)</item>
+        <item>L2 (lembah 1-5m)</item>
+        <item>L3 (lembah more 5m)</item>
+    </string-array>
+
+    <string-array name="tatagunaLahan">
+        <item>--Pilih--</item>
+        <item>RURAL (sawah, kebun, hutan)</item>
+        <item>URBAN1 (Perumahan)</item>
+        <item>URBAN2 (Perindustrian)</item>
+        <item>URBAN3 (pertokoan, perkantoran, pasar)</item>
+    </string-array>
+
+    <string-array name="valuetagunlahan">
+        <item>--Pilih--</item>
+        <item>RURAL (sawah, kebun, hutan)</item>
+        <item>URBAN1 (Perumahan)</item>
+        <item>URBAN2 (Perindustrian)</item>
+        <item>URBAN3 (pertokoan, perkantoran, pasar)</item>
+    </string-array>
+
+
+    <string-array name="tipe_saluran">
+        <item>--Pilih--</item>
+        <item>1. Tanah terbuka</item>
+        <item>2. Beton/pas batu terbuka</item>
+        <item>3. Saluran irigasi</item>
+        <item>4. Beton/pas batu tertutup</item>
+        <item>5. Tidak ada saluran</item>
+    </string-array>
+
+    <string-array name="tipe_saluran_value">
+        <item>Tidak ada saluran</item>
+        <item>Tanah terbuka</item>
+        <item>Beton/pas batu terbuka</item>
+        <item>Saluran irigasi</item>
+        <item>Beton/pas batu tertutup</item>
+        <item>Tidak ada saluran</item>
+    </string-array>
+
+    <string-array name="kondisi_saluran">
+        <item>Baik sekali</item>
+        <item>Baik</item>
+        <item>Sedang</item>
+        <item>Rusak Ringan</item>
+        <item>Rusak Berat</item>
+    </string-array>
+
+    <string-array name="konstruksi_saluran">
+        <item>Pasangan batu</item>
+        <item>Pasangan bata</item>
+        <item>Beton</item>
+        <item>Beton bertulang</item>
+    </string-array>
+
+    <string-array name="konstruksi_outlet">
+        <item>Pasangan batu</item>
+        <item>Beton</item>
+        <item>Beton bertulang</item>
+    </string-array>
+
+    <string-array name="konstruksi_gorong">
+        <item>Beton</item>
+        <item>Beton bertulang</item>
+        <item>Besi/Baja</item>
+    </string-array>
+
+    <string-array name="tipe_bahu">
+        <item>--Pilih--</item>
+        <item>Bahu lunak</item>
+        <item>Bahu diperkeras</item>
+        <item>Tidak ada bahu</item>
+    </string-array>
+
+    <string-array name="material_bahu_lunak">
+        <item>Tanah</item>
+        <item>Gravel</item>
+    </string-array>
+
+    <string-array name="material_bahu_keras">
+        <item>Aspal</item>
+        <item>Beton</item>
+    </string-array>
+
+    <string-array name="keberaaan_inlet">
+        <item>1. Tidak ada inlet ditrotoar</item>
+        <item>2. Ada inlet ditrotoar</item>
+    </string-array>
+
+    <string-array name="keberaaan_inlet_value">
+        <item>Tidak ada inlet</item>
+        <item>Ada inlet</item>
+    </string-array>
+
+    <string-array name="keberaaan_minlet">
+        <item>1. Tidak ada inlet dimedian</item>
+        <item>2. Ada inlet dimedian</item>
+    </string-array>
+
+    <string-array name="konstruksi_inlet">
+        <item>Beton</item>
+        <item>PVC</item>
+        <item>Besi/Baja</item>
+    </string-array>
+
+    <string-array name="keberaaan_outlet">
+        <item>1. Tidak ada outlet</item>
+        <item>2. Ada outlet</item>
+    </string-array>
+
+    <string-array name="keberaaan_outlet_value">
+        <item>Tidak ada outlet</item>
+        <item>Ada outlet</item>
+    </string-array>
+
+    <string-array name="keberadaan_gorong">
+        <item>1. Tidak ada Gorong-gorong</item>
+        <item>2. Ada Gorong-gorong</item>
+    </string-array>
+
+    <string-array name="keberadaan_gorong_value">
+        <item>Tidak ada gorong</item>
+        <item>Ada gorong</item>
+    </string-array>
+
+    <string-array name="tipe_lereng">
+        <item>1. Tidak ada saluran lereng</item>
+        <item>2. Saluran lereng gendong</item>
+        <item>3. Saluran lereng terjunan</item>
+    </string-array>
+
+    <string-array name="tipe_lereng_value">
+        <item>Tidak ada saluran lereng</item>
+        <item>Saluran lereng gendong</item>
+        <item>Saluran lereng terjunan</item>
+    </string-array>
+
+    <string-array name="tipe_permukaan">
+        <item>--Pilih--</item>
+        <item>Unpaved/Tanah</item>
+        <item>Japat (Awcas) / Kerikil</item>
+        <item>Telford/Macadam Terbuka</item>
+        <item>Burtu</item>
+        <item>Burda</item>
+        <item>Penetrasi Macadam 1 Lapis</item>
+        <item>Penetrasi Macadam 2 Lapis</item>
+        <item>Lasbutag (Butas)</item>
+        <item>Aspal/Beton (AC)</item>
+        <item>latasbum (nacas)</item>
+        <item>lataston (hrs)</item>
+        <item>HRSSA</item>
+        <item>Slurry Seal</item>
+        <item>Macro Seal</item>
+        <item>Micro Asbuton</item>
+        <item>DGEM</item>
+        <item>SMA</item>
+        <item>BMA</item>
+        <item>HSWC</item>
+        <item>SPAV</item>
+        <item>Concrete/Rigid</item>
+        <item>FLEXIBLE</item>
+    </string-array>
+
+    <string-array name="tipe_lane">
+        <item>--Pilih--</item>
+        <item>2/1 UD</item>
+        <item>2/2 UD</item>
+        <item>2/2 D</item>
+        <item>3/1 UD</item>
+        <item>3/2 UD</item>
+        <item>3/2 D</item>
+        <item>4/1 UD</item>
+        <item>4/1 D</item>
+        <item>4/2 UD</item>
+        <item>4/2 D</item>
+        <item>5/1 UD</item>
+        <item>5/1 D</item>
+        <item>5/2 UD</item>
+        <item>5/2 D</item>
+        <item>6/1 UD</item>
+        <item>6/1 D</item>
+        <item>6/2 UD</item>
+        <item>6/2 D</item>
+        <item>7/1 UD</item>
+        <item>7/1 D</item>
+        <item>7/2 UD</item>
+        <item>7/2 D</item>
+        <item>8/2 UD</item>
+        <item>8/2 D</item>
+        <item>10/2 D</item>
+    </string-array>
+
+    <string-array name="al_vertikal">
+        <item>DATAR (F)</item>
+        <item>BUKIT (R)</item>
+        <item>GUNUNG (H)</item>
+    </string-array>
+
+    <string-array name="al_horizontal">
+        <item>LURUS</item>
+        <item>SEDIKIT BELOKAN</item>
+        <item>BANYAK BELOKAN</item>
+    </string-array>
+
+
+    <string-array name="tipe_bagian">
+        <item>--Tipe--</item>
+        <item>Lahan</item>
+        <item>Saluran</item>
+        <item>Bahu</item>
+        <item>Median</item>
+        <item>Lane</item>
+    </string-array>
+
+    <string-array name="posisiNormal">
+        <item>--Posisi--</item>
+        <item>Left</item>
+        <item>Right</item>
+    </string-array>
+
+    <string-array name="posisiLane">
+        <item>--Pilih--</item>
+        <item>L1</item>
+        <item>L2</item>
+        <item>L3</item>
+        <item>L4</item>
+        <item>L5</item>
+        <item>L6</item>
+        <item>L7</item>
+        <item>L8</item>
+        <item>L9</item>
+        <item>L10</item>
+        <item>R1</item>
+        <item>R2</item>
+        <item>R3</item>
+        <item>R4</item>
+        <item>R5</item>
+        <item>R6</item>
+        <item>R7</item>
+        <item>R8</item>
+        <item>R9</item>
+        <item>R10</item>
+    </string-array>
+
+    <string-array name="posisiMedian">
+        <item>--Pilih--</item>
+    </string-array>
+
+    <string-array name="tipeSurvey">
+        <item>--Pilih--</item>
+        <item>Segment</item>
+        <item>Lahan</item>
+        <item>Saluran</item>
+        <item>Bahu</item>
+        <item>Median</item>
+        <item>Lane</item>
+        <item>Perkerasan</item>
+        <item>SPD</item>
+        <item>SPL</item>
+        <item>Inlet ditrotoar</item>
+        <item>Outlet</item>
+        <item>Gorong-gorong</item>
+        <item>Saluran Lereng</item>
+    </string-array>
+
+    <string-array name="posisiTipe">
+        <item>--Pilih--</item>
+        <item>kiri</item>
+        <item>kanan</item>
+    </string-array>
+
+    <string-array name="warna">
+        <item>putih</item>
+        <item>merah</item>
+        <item>hijau</item>
+        <item>biru</item>
+    </string-array>
+
+
+    <string-array name="arrayLane">
+        <item>L1</item>
+        <item>L2</item>
+        <item>L3</item>
+        <item>L4</item>
+        <item>L5</item>
+        <item>L6</item>
+        <item>L7</item>
+        <item>L8</item>
+        <item>L9</item>
+        <item>L10</item>
+        <item>R1</item>
+        <item>R2</item>
+        <item>R3</item>
+        <item>R4</item>
+        <item>R5</item>
+        <item>R6</item>
+        <item>R7</item>
+        <item>R8</item>
+        <item>R9</item>
+        <item>R10</item>
+    </string-array>
+
+    <string-array name="arrayEndSurvey">
+        <item>Bahu-kiri</item>
+        <item>Bahu-kanan</item>
+        <item>Lahan-kiri</item>
+        <item>Lahan-kanan</item>
+        <item>Saluran-kiri</item>
+        <item>Saluran-kanan</item>
+        <item>Perkerasan-kiri</item>
+        <item>Perkerasan-kanan</item>
+        <item>SPD-kiri</item>
+        <item>SPD-kanan</item>
+        <item>SPL-kiri</item>
+        <item>SPL-kanan</item>
+        <item>Median-Median</item>
+        <item>Lane-L1</item>
+        <item>Lane-L2</item>
+        <item>Lane-L3</item>
+        <item>Lane-L4</item>
+        <item>Lane-L5</item>
+        <item>Lane-L6</item>
+        <item>Lane-L7</item>
+        <item>Lane-L8</item>
+        <item>Lane-L9</item>
+        <item>Lane-L10</item>
+        <item>Lane-R1</item>
+        <item>Lane-R2</item>
+        <item>Lane-R3</item>
+        <item>Lane-R4</item>
+        <item>Lane-R5</item>
+        <item>Lane-R6</item>
+        <item>Lane-R7</item>
+        <item>Lane-R8</item>
+        <item>Lane-R9</item>
+        <item>Lane-R10</item>
+    </string-array>
+
+    <string name="title_activity_das">Dashboard</string>
+    <string name="title_activity_menuutama">Menuutama</string>
+    <string name="title_activity_lihat_tabel">LihatTabel</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+</resources>

@@ -1,0 +1,1143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/medianjl"
+            android:background="@drawable/listputih"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="Median"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:text="Type"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tipemedian"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:text="Lebar"
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/lebarmedian"
+                        android:padding="5dp"
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            <!--    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:text="Kondisi"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_weight="5"
+                        android:id="@+id/kondisimedian"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>-->
+            </LinearLayout>
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/arrow"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/lane1r"
+            android:background="@drawable/listabu"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="LANE R1"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:text="Surface"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/surfacer1"
+                        android:padding="5dp"
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+             <!--   <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:text="Type"
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tipelaner1"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:text="Lebar"
+                        android:paddingLeft="10dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_weight="5"
+                        android:id="@+id/lebarlaner1"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            <!--    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:text="Luas"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/luaslaner1"
+                        android:padding="5dp"
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>-->
+            </LinearLayout>
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/arrow"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/lane2r"
+            android:background="@drawable/listabu"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="LANE R2"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:text="Surface"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/surfacer2"
+                        android:padding="5dp"
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+             <!--   <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:text="Type"
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tipelaner2"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:text="Lebar"
+                        android:paddingLeft="10dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_weight="5"
+                        android:id="@+id/lebarlaner2"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+             <!--   <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:text="Luas"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/luaslaner2"
+                        android:padding="5dp"
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>-->
+            </LinearLayout>
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/arrow"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/lane3r"
+            android:background="@drawable/listabu"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="LANE R3"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:text="Surface"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/surfacer3"
+                        android:padding="5dp"
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            <!--    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:text="Type"
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tipelaner3"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:text="Lebar"
+                        android:paddingLeft="10dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_weight="5"
+                        android:id="@+id/lebarlaner3"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+             <!--   <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:text="Luas"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/luaslaner3"
+                        android:padding="5dp"
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>-->
+            </LinearLayout>
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/arrow"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/lane4r"
+            android:background="@drawable/listabu"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="LANE R4"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:text="Surface"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/surfacer4"
+                        android:padding="5dp"
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+             <!--   <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:text="Type"
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tipelaner4"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:text="Lebar"
+                        android:paddingLeft="10dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_weight="5"
+                        android:id="@+id/lebarlaner4"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+             <!--   <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:text="Luas"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/luaslaner4"
+                        android:padding="5dp"
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>-->
+            </LinearLayout>
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/arrow"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/bahuright"
+            android:background="@drawable/listputih"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="BAHU-R"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:text="Type"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tipebahur"
+                        android:padding="5dp"
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:text="Lebar"
+                        android:textStyle="bold"
+                        android:layout_weight="2"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/lebarbahur"
+                        android:padding="5dp"
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            <!--    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:text="Kondisi"
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="5"
+                        android:id="@+id/kondisibahur"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>-->
+            </LinearLayout>
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/arrow"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/saluranright"
+            android:background="@drawable/listbiru"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="SALURAN-R"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:text="Type"
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_weight="5"
+                        android:id="@+id/tipesaluranr"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:text="Lebar"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_weight="5"
+                        android:id="@+id/lebarsaluranr"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:text="Dalam"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/dalamsaluranr"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            <!--    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:textStyle="bold"
+                        android:text="Kondisi"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="5"
+                        android:id="@+id/kondisisaluranr"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>-->
+            </LinearLayout>
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/arrow"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@drawable/listhijau"
+            android:layout_width="match_parent"
+            android:id="@+id/lahanright"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:textStyle="bold"
+                android:text="LAHAN-R"
+                android:paddingLeft="20dp"
+                android:textSize="16dp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:text="Type"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_weight="5"
+                        android:id="@+id/tipelahanr"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:text="Used"
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="5"
+                        android:id="@+id/uselahanr"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:text="Tinggi"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_weight="5"
+                        android:id="@+id/tinggilahanr"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+             <!--   <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:text="Resiko"
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text=":"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/resikolahanr"
+                        android:padding="5dp"
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:textSize="14dp"
+                        tools:text="0.200"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>-->
+            </LinearLayout>
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/arrow"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

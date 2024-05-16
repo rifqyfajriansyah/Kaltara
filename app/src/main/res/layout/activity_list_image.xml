@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:background="#efeeed"
+    tools:context="com.example.roadmanagement.kaltara.GetSemuaImage.ListImage">
+
+
+    <include layout="@layout/toolbak"/>
+
+   <LinearLayout
+       android:background="@color/colorPrimary"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <androidx.cardview.widget.CardView
+           android:layout_weight="0.1"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"></androidx.cardview.widget.CardView>
+
+
+       <Spinner
+           android:textAlignment="center"
+           android:textStyle="bold"
+           android:background="@android:color/background_light"
+           android:layout_margin="5dp"
+           android:id="@+id/tipegambar"
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"/>
+
+
+       <Spinner
+           android:textAlignment="center"
+           android:textStyle="bold"
+           android:background="@android:color/background_light"
+           android:layout_margin="5dp"
+           android:id="@+id/posisigambar"
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"/>
+
+       <EditText
+           android:imeOptions="actionDone"
+           android:inputType="numberDecimal"
+           android:background="@android:color/background_light"
+           android:textColor="@android:color/background_dark"
+           android:textStyle="bold"
+           android:textSize="12dp"
+           android:textAlignment="center"
+           android:hint="Segment"
+           android:layout_margin="5dp"
+           android:id="@+id/segmentgambar"
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"/>
+
+   </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/recyclevertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/listimagekosong"
+        android:text="Silahkan pilih "
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

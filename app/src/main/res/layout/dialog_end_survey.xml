@@ -1,0 +1,118 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="#2A2A2A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textEndsurvey"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/background_light"
+                android:text="Apakah survey untuk ruas telah selesai"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/endYa"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="3dp"
+                    app:cardBackgroundColor="#efeeed">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="YA"
+                        android:textAlignment="center"
+                        android:textColor="#4159BE"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/endTidak"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="3dp"
+                    app:cardBackgroundColor="#efeeed">
+
+                    <TextView
+                        android:textSize="16dp"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="TIDAK"
+                        android:textAlignment="center"
+                        android:textColor="#AA2929"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:id="@+id/endMenuUTama"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="3dp"
+                app:cardBackgroundColor="#efeeed">
+
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Menu Utama"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_marginBottom="7dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="#9fa0a3"
+        android:layout_width="80dp"
+        android:layout_height="100dp">
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:id="@+id/tablelanesta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:text="Perkotaan"
+            android:textAlignment="center"
+            android:textColor="#4159BE"
+            android:textSize="11dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/tablelanesegment"
+            android:text="999"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tablelanekm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="3dp"
+            android:textAlignment="center"
+            android:textColor="#AA2929"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/tabler10"
+            android:layout_width="80dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tabler10tinggi"
+                android:text="20"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:textStyle="bold"
+                android:id="@+id/tabler10sc"
+                android:text="Perkotaan"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textSize="11dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/tabler9"
+            android:layout_width="80dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tabler9tinggi"
+                android:text="20"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:id="@+id/tabler9sc"
+                android:text="Perkotaan"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textSize="11dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/tabler8"
+            android:layout_width="80dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tabler8tinggi"
+                android:text="20"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:id="@+id/tabler8sc"
+                android:text="Perkotaan"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textSize="11dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/tabler7"
+            android:layout_width="80dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tabler7tinggi"
+                android:text="20"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:id="@+id/tabler7sc"
+                android:text="Perkotaan"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textSize="11dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/tabler6"
+            android:layout_width="80dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tabler6tinggi"
+                android:text="20"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:id="@+id/tabler6sc"
+                android:text="Perkotaan"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textSize="11dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/tabler5"
+            android:layout_width="80dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tabler5tinggi"
+                android:text="20"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:id="@+id/tabler5sc"
+                android:text="Perkotaan"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textSize="11dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/tabler4"
+            android:layout_width="80dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tabler4tinggi"
+                android:text="20"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:id="@+id/tabler4sc"
+                android:text="Perkotaan"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textSize="11dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/tabler3"
+            android:layout_width="80dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tabler3tinggi"
+                android:text="20"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:id="@+id/tabler3sc"
+                android:text="Perkotaan"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textSize="11dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/tabler2"
+            android:layout_width="80dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tabler2tinggi"
+                android:text="20"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:id="@+id/tabler2sc"
+                android:text="Perkotaan"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textSize="11dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:id="@+id/tabler1"
+            android:layout_width="80dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tabler1tinggi"
+                android:text="20"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:id="@+id/tabler1sc"
+                android:text="Perkotaan"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textSize="11dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:id="@+id/tablel1"
+            android:layout_width="80dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tablel1tinggi"
+                android:text="20"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:id="@+id/tablel1sc"
+                android:text="Perkotaan"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textSize="11dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tablel2"
+            android:layout_width="80dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tablel2tinggi"
+                android:text="20"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:id="@+id/tablel2sc"
+                android:text="Perkotaan"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textSize="11dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tablel3"
+            android:layout_width="80dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tablel3tinggi"
+                android:text="20"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:id="@+id/tablel3sc"
+                android:text="Perkotaan"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textSize="11dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tablel4"
+            android:layout_width="80dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tablel4tinggi"
+                android:text="20"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:id="@+id/tablel4sc"
+                android:text="Perkotaan"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textSize="11dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tablel5"
+            android:layout_width="80dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tablel5tinggi"
+                android:text="20"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:id="@+id/tablel5sc"
+                android:text="Perkotaan"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textSize="11dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tablel6"
+            android:layout_width="80dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tablel6tinggi"
+                android:text="20"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:id="@+id/tablel6sc"
+                android:text="Perkotaan"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textSize="11dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tablel7"
+            android:layout_width="80dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tablel7tinggi"
+                android:text="20"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:id="@+id/tablel7sc"
+                android:text="Perkotaan"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textSize="11dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tablel8"
+            android:layout_width="80dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tablel8tinggi"
+                android:text="20"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:id="@+id/tablel8sc"
+                android:text="Perkotaan"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textSize="11dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tablel9"
+            android:layout_width="80dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tablel9tinggi"
+                android:text="20"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:id="@+id/tablel9sc"
+                android:text="Perkotaan"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textSize="11dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tablel10"
+            android:layout_width="80dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tablel10tinggi"
+                android:text="20"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:id="@+id/tablel10sc"
+                android:text="Perkotaan"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textSize="11dp"
+                android:textColor="@android:color/background_dark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</LinearLayout>

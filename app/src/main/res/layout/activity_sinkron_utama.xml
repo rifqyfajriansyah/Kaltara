@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.roadmanagement.kaltara.sinkronForm.SinkronUtama">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarsearch"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/sinkronBack"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:scaleX="-1"
+                android:src="@drawable/arrow" />
+
+            <LinearLayout
+                android:layout_weight="3"
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/judultoolbar"
+                    android:text="SINKRON "
+                    android:textStyle="bold|italic"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sinkronProvinsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@android:color/background_light"
+                    android:text="003"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_app"
+                android:layout_width="50dp"
+                android:layout_height="40dp" />
+
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/sinkronDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/sinkronPosisi"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/sinkronWarna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/boxnotifsinkron"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        app:cardCornerRadius="5dp"
+        >
+        <TextView
+            android:textColor="@android:color/background_light"
+            android:id="@+id/sinkronnotif"
+            android:textStyle="bold"
+            android:background="#D61515"
+            android:textAlignment="center"
+            android:text="Terdapat 5 Perubahan yang tidak terdapat foto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclesinkron"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            app:backgroundTint="#53A29B"
+            android:id="@+id/sinkronButton"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="90dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/icon_refresh"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

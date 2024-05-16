@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#efeeed"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    tools:context="com.example.roadmanagement.kaltara.kolektif.KolektifSaluranku">
+
+    <include layout="@layout/toolbak"/>
+
+    <ScrollView
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/judulkolektifsaluran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Saluran"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16pt"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Posisi"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/listputih">
+
+                    <Spinner
+                        android:id="@+id/posisikolektifsaluran"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></Spinner>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mulai"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/listputih">
+
+                    <Spinner
+                        android:id="@+id/awalkolektifsaluran"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></Spinner>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Akhir"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/listputih">
+
+                    <Spinner
+                        android:id="@+id/akhirkolektifsaluran"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></Spinner>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:text="Tipe Saluran "
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/tipekolektifsaluran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:text="Lebar Saluran"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="3"
+                app:cardCornerRadius="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+
+
+                <EditText
+                    android:id="@+id/lebarkolektifsaluran"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/background_light"
+                    android:textSize="14dp"
+                    android:paddingLeft="10dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:textSize="11dp"
+                android:textStyle="italic|bold"
+                android:textColor="#AA2929"
+                android:text="Meter"
+                android:layout_gravity="center"
+                android:layout_marginRight="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:text="Dalam Saluran"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="3"
+                app:cardCornerRadius="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+
+
+                <EditText
+                    android:id="@+id/dalamkolektifsaluran"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/background_light"
+                    android:textSize="14dp"
+                    android:paddingLeft="10dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="25dp"
+                android:text="Meter"
+                android:textColor="#AA2929"
+                android:textSize="11dp"
+                android:textStyle="italic|bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:background="@drawable/listabu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/salurankolektifrecycle"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:id="@+id/tambahfotosalurankolektif"
+                android:src="@drawable/icon_tambah"
+                android:layout_width="50dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                android:layout_centerInParent="true"
+                app:cardBackgroundColor="#4159BE"
+                android:layout_marginBottom="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:text="Save"
+                    android:layout_margin="3dp"
+                    android:textColor="@android:color/background_light"
+                    android:textStyle="bold"
+                    android:id="@+id/buttonkolektifsaluran"
+                    android:background="#4159BE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

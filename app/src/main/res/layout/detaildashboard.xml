@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="2dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/dashboardku"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/noprovdashboard"
+                android:paddingLeft="5dp"
+                android:textSize="14dp"
+                android:text="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:paddingLeft="5dp"
+                android:textSize="14dp"
+                android:text="-"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/noruasdashboard"
+                android:paddingLeft="5dp"
+                android:textSize="14dp"
+                android:text="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:paddingLeft="5dp"
+                android:textSize="14dp"
+                android:text="-"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/nosegmentdashboard"
+                android:paddingLeft="5dp"
+                android:textSize="14dp"
+                android:text="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:paddingLeft="5dp"
+                android:textSize="14dp"
+                android:text="-"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tipedashboard"
+                android:paddingLeft="5dp"
+                android:textSize="14dp"
+                android:text="Lane"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/posisidashboard"
+                android:paddingLeft="5dp"
+                android:textSize="14dp"
+                android:text="Left"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/nourutdashboard"
+                android:paddingLeft="5dp"
+                android:textSize="14dp"
+                android:text="L1"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

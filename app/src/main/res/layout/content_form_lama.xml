@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</LinearLayout>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_form">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_weight="3"
+            app:cardBackgroundColor="#e1e9ef"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:padding="5dp"
+                        android:text="PERUBAHAN"
+                        android:textColor="@color/hitamku"
+                        android:textSize="16dp"
+                        android:textStyle="bold|italic" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/tablekiri"
+                                android:padding="5dp"
+                                android:text="Lahan"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/background_light" />
+
+                            <TextView
+                                android:id="@+id/perubahanlahan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/tablekanan"
+                                android:padding="5dp"
+                                android:text="Perubahan"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimary" />
+
+
+                        </TableRow>
+
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/tablekiri"
+                                android:padding="5dp"
+                                android:text="Bahu"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/background_light" />
+
+                            <TextView
+                                android:id="@+id/perubahanbahu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/tablekanan"
+                                android:padding="5dp"
+                                android:text="Saluran"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimary" />
+
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/tablekiri"
+                                android:padding="5dp"
+                                android:text="Median"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/background_light" />
+
+                            <TextView
+                                android:id="@+id/perubahanmedian"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/tablekanan"
+                                android:padding="5dp"
+                                android:text="Perubahan"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimary" />
+
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/tablekiri"
+                                android:padding="5dp"
+                                android:text="Saluran"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/background_light" />
+
+                            <TextView
+                                android:id="@+id/perubahansaluran"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/tablekanan"
+                                android:padding="5dp"
+                                android:text="Perubahan"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimary" />
+
+
+                        </TableRow>
+
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/tablekiri"
+                                android:padding="5dp"
+                                android:text="Lane"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/background_light" />
+
+                            <TextView
+                                android:id="@+id/perubahanlane"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/tablekanan"
+                                android:padding="5dp"
+                                android:text="Perubahan"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimary" />
+
+
+                        </TableRow>
+
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_weight="4"
+            app:cardBackgroundColor="#e1e9ef"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:textColor="@color/hitamku"
+                        android:layout_marginLeft="30dp"
+                        android:padding="5dp"
+                        android:textStyle="bold|italic"
+                        android:textSize="16dp"
+                        android:text="SINKRON"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:textColor="@color/colorPrimaryDark"
+                        android:id="@+id/sinkron"
+                        android:text="Sinkron"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp" />
+
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_margin="10dp"
+                    android:id="@+id/dashboardrecycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+                <TextView
+                    android:id="@+id/kosongbelum"
+                    android:textStyle="bold|italic"
+                    android:textColor="#fff"
+                    android:gravity="center_vertical"
+                    android:textAlignment="center"
+                    android:text="Semua data telah disinkron"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_weight="4"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            app:cardBackgroundColor="#e1e9ef"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:textColor="@color/hitamku"
+                        android:layout_marginLeft="30dp"
+                        android:padding="5dp"
+                        android:textStyle="bold|italic"
+                        android:textSize="16dp"
+                        android:text="TER-SINKRON"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:textColor="@color/colorPrimaryDark"
+                        android:id="@+id/sinkronulang"
+                        android:text="Sinkron"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_margin="5dp"
+                    android:id="@+id/updatedrecycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+
+                <TextView
+                    android:id="@+id/kosongsudah"
+                    android:textStyle="bold|italic"
+                    android:textColor="#fff"
+                    android:gravity="center_vertical"
+                    android:textAlignment="center"
+                    android:text="Belum ada data yang telah disinkron"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</LinearLayout>-->

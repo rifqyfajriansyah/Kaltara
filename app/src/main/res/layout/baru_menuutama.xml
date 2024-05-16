@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:background="#686262"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:background="@drawable/listputih"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="15dp"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="--Pilih Ruas--"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/cardview_dark_background"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="30dp"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Perubahan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TableLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/tablekiri"
+                        android:textColor="@color/colorAccent"
+                        android:text="Lahan"/>
+
+                    <TextView
+
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/tablekanan"
+                        android:textColor="@color/colorAccent"
+                        android:text="Perubahan"/>
+
+
+                </TableRow>
+
+
+                <TableRow>
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/tablekiri"
+                        android:textColor="@color/colorAccent"
+                        android:text="Bahu"/>
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/tablekanan"
+                        android:textColor="@color/colorAccent"
+                        android:text="Saluran"/>
+
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/tablekiri"
+                        android:textColor="@color/colorAccent"
+                        android:text="Median"/>
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/tablekanan"
+                        android:textColor="@color/colorAccent"
+                        android:text="Perubahan"/>
+
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/tablekiri"
+                        android:textColor="@color/colorAccent"
+                        android:text="Saluran"/>
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/tablekanan"
+                        android:textColor="@color/colorAccent"
+                        android:text="Perubahan"/>
+
+
+                </TableRow>
+
+
+                <TableRow>
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/tablekiri"
+                        android:textColor="@color/colorAccent"
+                        android:text="Lane"/>
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/tablekanan"
+                        android:textColor="@color/colorAccent"
+                        android:text="Perubahan"/>
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="@color/cardview_dark_background"
+                android:layout_width="match_parent"
+                android:layout_height="225dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="@color/colorAccent"
+                            android:layout_marginLeft="30dp"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:textSize="16dp"
+                            android:text="Data yang belum disinkron"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <Button
+                            android:text="Sinkron"
+                            android:textSize="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp" />
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:textStyle="bold|italic"
+                        android:textColor="#fff"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:text="Semua data telah disinkron"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="@color/cardview_dark_background"
+                android:layout_width="match_parent"
+                android:layout_height="225dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="@color/colorAccent"
+                            android:layout_marginLeft="30dp"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:textSize="16dp"
+                            android:text="Data yang telah disinkron"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <Button
+                            android:text="Sinkron"
+                            android:textSize="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:textStyle="bold|italic"
+                        android:textColor="#fff"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:text="Belum ada data yang telah disinkron"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

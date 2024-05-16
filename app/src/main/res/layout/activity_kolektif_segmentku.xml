@@ -1,0 +1,1121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#efeeed"
+    android:layout_height="match_parent"
+    tools:context="com.example.roadmanagement.kaltara.kolektif.KolektifSegmentku">
+
+    <include layout="@layout/toolbak"/>
+
+
+
+    <ScrollView
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/judulkolektifsegment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Segment"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16pt"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mulai"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/listputih">
+
+                    <Spinner
+                        android:id="@+id/awalkolektifsegmentkolektif"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></Spinner>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Akhir"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/listputih">
+
+                    <Spinner
+                        android:id="@+id/akhirkolektifsegmentkolektif"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></Spinner>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:background="@drawable/kotakhijau"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="20dp"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:text="Alinyemen Vertical "
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <androidx.cardview.widget.CardView
+                                app:cardCornerRadius="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <Spinner
+                                    android:id="@+id/spinneralvertikalkolektif"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"></Spinner>
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="20dp"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:text="Alinyemen Horizontal "
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <androidx.cardview.widget.CardView
+                                app:cardCornerRadius="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <Spinner
+                                    android:id="@+id/spinneralhorizontalkolektif"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"></Spinner>
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:text="Grade"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_weight="3"
+                                    app:cardCornerRadius="5dp">
+
+
+                                    <EditText
+                                        android:id="@+id/gradekolektif"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:background="@android:color/background_light"
+                                        android:imeOptions="actionDone"
+                                        android:inputType="numberDecimal"
+                                        android:maxLength="4"
+                                        android:paddingLeft="10dp"
+                                        android:textSize="14dp" />
+
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:textSize="11dp"
+                                    android:textStyle="italic|bold"
+                                    android:textColor="#AA2929"
+                                    android:text="Persen"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="25dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:text="Lebar pvmt"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_weight="3"
+                                    app:cardCornerRadius="5dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content">
+
+
+
+                                    <EditText
+                                        android:id="@+id/lebarpvmtkolektif"
+                                        android:layout_margin="5dp"
+                                        android:background="@android:color/background_light"
+                                        android:textSize="14dp"
+                                        android:paddingLeft="10dp"
+                                        android:imeOptions="actionDone"
+                                        android:inputType="numberDecimal"
+                                        android:maxLength="4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:textSize="11dp"
+                                    android:textStyle="italic|bold"
+                                    android:textColor="#AA2929"
+                                    android:text="Milimeter"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="25dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:text="Tipe jalan "
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Spinner
+                            android:id="@+id/spinnertipejalankolektif"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></Spinner>
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            app:cardCornerRadius="4dp"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:padding="5dp"
+                                android:layout_centerHorizontal="true"
+                                android:text="LEFT"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="10pt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+
+                            app:cardBackgroundColor="@color/colorAccent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/kotakl1kolektif"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:padding="5dp"
+                                    android:textAlignment="center"
+                                    android:text="Lane L1"
+                                    android:textColor="@android:color/background_dark"
+                                    android:textSize="8pt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/detaillanel1kolektif"
+                                    android:src="@drawable/icon_silang"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            app:cardBackgroundColor="@color/colorAccent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/kotakl2kolektif"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:padding="5dp"
+                                    android:textAlignment="center"
+                                    android:text="Lane L2"
+                                    android:textColor="@android:color/background_dark"
+                                    android:textSize="8pt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/detaillanel2kolektif"
+                                    android:src="@drawable/icon_silang"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            app:cardBackgroundColor="@color/colorAccent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/kotakl3kolektif"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:padding="5dp"
+                                    android:textAlignment="center"
+                                    android:text="Lane L3"
+                                    android:textColor="@android:color/background_dark"
+                                    android:textSize="8pt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/detaillanel3kolektif"
+                                    android:src="@drawable/icon_silang"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            app:cardBackgroundColor="@color/colorAccent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/kotakl4kolektif"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:padding="5dp"
+                                    android:textAlignment="center"
+                                    android:text="Lane L4"
+                                    android:textColor="@android:color/background_dark"
+                                    android:textSize="8pt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/detaillanel4kolektif"
+                                    android:src="@drawable/icon_silang"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            app:cardBackgroundColor="@color/colorAccent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/kotakl5kolektif"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:padding="5dp"
+                                    android:textAlignment="center"
+                                    android:text="Lane L5"
+                                    android:textColor="@android:color/background_dark"
+                                    android:textSize="8pt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/detaillanel5kolektif"
+                                    android:src="@drawable/icon_silang"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            app:cardBackgroundColor="@color/colorAccent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/kotakl6kolektif"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:padding="5dp"
+                                    android:textAlignment="center"
+                                    android:text="Lane L6"
+                                    android:textColor="@android:color/background_dark"
+                                    android:textSize="8pt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/detaillanel6kolektif"
+                                    android:src="@drawable/icon_silang"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            app:cardBackgroundColor="@color/colorAccent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/kotakl7kolektif"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:padding="5dp"
+                                    android:textAlignment="center"
+                                    android:text="Lane L7"
+                                    android:textColor="@android:color/background_dark"
+                                    android:textSize="8pt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/detaillanel7kolektif"
+                                    android:src="@drawable/icon_silang"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            app:cardBackgroundColor="@color/colorAccent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/kotakl8kolektif"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:padding="5dp"
+                                    android:textAlignment="center"
+                                    android:text="Lane L8"
+                                    android:textColor="@android:color/background_dark"
+                                    android:textSize="8pt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/detaillanel8kolektif"
+                                    android:src="@drawable/icon_silang"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            app:cardBackgroundColor="@color/colorAccent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/kotakl9kolektif"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:padding="5dp"
+                                    android:textAlignment="center"
+                                    android:text="Lane L9"
+                                    android:textColor="@android:color/background_dark"
+                                    android:textSize="8pt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/detaillanel9kolektif"
+                                    android:src="@drawable/icon_silang"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            app:cardBackgroundColor="@color/colorAccent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/kotakl10kolektif"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:padding="5dp"
+                                    android:textAlignment="center"
+                                    android:text="Lane L10"
+                                    android:textColor="@android:color/background_dark"
+                                    android:textSize="8pt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/detaillanel10kolektif"
+                                    android:src="@drawable/icon_silang"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            app:cardCornerRadius="4dp"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:padding="5dp"
+                                android:layout_centerHorizontal="true"
+                                android:text="RIGHT"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="10pt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            app:cardBackgroundColor="@color/colorAccent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/kotakr1kolektif"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:padding="5dp"
+                                    android:textAlignment="center"
+                                    android:text="Lane R1"
+                                    android:textColor="@android:color/background_dark"
+                                    android:textSize="8pt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/detaillaner1kolektif"
+                                    android:src="@drawable/icon_silang"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            app:cardBackgroundColor="@color/colorAccent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/kotakr2kolektif"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:padding="5dp"
+                                    android:textAlignment="center"
+                                    android:text="Lane R2"
+                                    android:textColor="@android:color/background_dark"
+                                    android:textSize="8pt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/detaillaner2kolektif"
+                                    android:src="@drawable/icon_silang"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            app:cardBackgroundColor="@color/colorAccent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/kotakr3kolektif"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:padding="5dp"
+                                    android:textAlignment="center"
+                                    android:text="Lane R3"
+                                    android:textColor="@android:color/background_dark"
+                                    android:textSize="8pt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/detaillaner3kolektif"
+                                    android:src="@drawable/icon_silang"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            app:cardBackgroundColor="@color/colorAccent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/kotakr4kolektif"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:padding="5dp"
+                                    android:textAlignment="center"
+                                    android:text="Lane R4"
+                                    android:textColor="@android:color/background_dark"
+                                    android:textSize="8pt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/detaillaner4kolektif"
+                                    android:src="@drawable/icon_silang"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            app:cardBackgroundColor="@color/colorAccent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/kotakr5kolektif"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:padding="5dp"
+                                    android:textAlignment="center"
+                                    android:text="Lane R5"
+                                    android:textColor="@android:color/background_dark"
+                                    android:textSize="8pt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/detaillaner5kolektif"
+                                    android:src="@drawable/icon_silang"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            app:cardBackgroundColor="@color/colorAccent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/kotakr6kolektif"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:padding="5dp"
+                                    android:textAlignment="center"
+                                    android:text="Lane R6"
+                                    android:textColor="@android:color/background_dark"
+                                    android:textSize="8pt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/detaillaner6kolektif"
+                                    android:src="@drawable/icon_silang"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            app:cardBackgroundColor="@color/colorAccent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/kotakr7kolektif"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:padding="5dp"
+                                    android:textAlignment="center"
+                                    android:text="Lane R7"
+                                    android:textColor="@android:color/background_dark"
+                                    android:textSize="8pt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/detaillaner7kolektif"
+                                    android:src="@drawable/icon_silang"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            app:cardBackgroundColor="@color/colorAccent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/kotakr8kolektif"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:padding="5dp"
+                                    android:textAlignment="center"
+                                    android:text="Lane R8"
+                                    android:textColor="@android:color/background_dark"
+                                    android:textSize="8pt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/detaillaner8kolektif"
+                                    android:src="@drawable/icon_silang"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            app:cardBackgroundColor="@color/colorAccent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/kotakr9kolektif"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:padding="5dp"
+                                    android:textAlignment="center"
+                                    android:text="Lane R9"
+                                    android:textColor="@android:color/background_dark"
+                                    android:textSize="8pt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/detaillaner9kolektif"
+                                    android:src="@drawable/icon_silang"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            app:cardBackgroundColor="@color/colorAccent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/kotakr10kolektif"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:padding="5dp"
+                                    android:textAlignment="center"
+                                    android:text="Lane R10"
+                                    android:textColor="@android:color/background_dark"
+                                    android:textSize="8pt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/detaillaner10kolektif"
+                                    android:src="@drawable/icon_silang"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:background="@color/abumuda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:background="@color/abumuda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_margin="7dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:padding="5dp"
+                                android:textStyle="bold"
+                                android:gravity="center_vertical"
+                                android:text="Jumlah Lane :"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="8pt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/jumlahlanekolektif"
+                                    android:layout_gravity="center_vertical"
+                                    android:padding="5dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="4"
+                                    android:layout_margin="2dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@android:color/background_dark"
+                                    android:textSize="6pt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="10dp"
+                        android:layout_centerInParent="true"
+                        app:cardBackgroundColor="#4159BE"
+                        android:layout_marginBottom="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:layout_centerInParent="true"
+                            android:text="Save"
+                            android:background="@drawable/radius_blok"
+                            android:textColor="@android:color/background_light"
+                            android:textStyle="bold"
+                            android:id="@+id/kolektifsegmentbutton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

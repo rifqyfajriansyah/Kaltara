@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.roadmanagement.kaltara.kolektif.Kolektiflahan">
+
+    <include layout="@layout/toolbak"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/juduldetaillahan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Lahan"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16pt"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Posisi"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/listputih">
+
+                    <Spinner
+                        android:id="@+id/posisikolektiflahan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></Spinner>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mulai"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/listputih">
+
+                    <Spinner
+                        android:id="@+id/awalkolektiflahan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></Spinner>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Akhir"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/listputih">
+
+                    <Spinner
+                        android:id="@+id/akhirkolektiflahan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></Spinner>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="3"
+                android:paddingTop="10dp"
+                android:text="Tipe Lahan"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/background_dark"
+                android:textSize="8pt" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:paddingTop="10dp"
+                android:text=":"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:textSize="8pt" />
+
+            <Spinner
+                android:id="@+id/tipekolektiflahan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5">
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="3"
+                android:paddingTop="10dp"
+                android:text="Tata Guna"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/background_dark"
+                android:textSize="8pt" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:paddingTop="10dp"
+                android:text=":"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:textSize="8pt" />
+
+            <Spinner
+                android:id="@+id/tagunkolektiflahan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5">
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="3"
+                android:text="Tinggi"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/background_dark"
+                android:textSize="8pt" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text=":"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:textSize="8pt" />
+
+            <TextView
+                android:id="@+id/tinggikolektiflahan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/listputih"
+                android:clickable="false"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textSize="14dp"></TextView>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/buttonkolektiflahan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="30dp"
+                android:background="#2647d6"
+                android:text="Save"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

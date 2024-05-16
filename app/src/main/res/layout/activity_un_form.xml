@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeeed"
+    android:orientation="vertical"
+    tools:context="com.example.roadmanagement.kaltara.Formu.UnForm">
+
+    <include layout="@layout/toolunform"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textunform"
+            android:textColor="#8D1A1A"
+            android:textStyle="bold|italic"
+            android:layout_centerInParent="true"
+            tools:text="Silahkan lengkapi data terlebih dahulu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/linearunform"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="3"
+                app:cardCornerRadius="5dp">
+
+                <Spinner
+                    android:id="@+id/unformtipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center_vertical"
+                app:cardCornerRadius="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/unformposisi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="0dp">
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/unformtambah"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            app:cardCornerRadius="10dp"
+            android:layout_marginRight="15dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:src="@drawable/icon_tambah"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/unformrecycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/linearunform"
+            android:layout_marginTop="2dp" />
+    </RelativeLayout>
+
+</LinearLayout>

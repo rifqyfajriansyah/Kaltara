@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#efeeed"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="Tipe Saluran "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="5dp">
+
+                <Spinner
+                    android:id="@+id/formSaluranTipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></Spinner>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/formSaluran5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/formSaluranTidak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textSize="12dp"
+                        android:layout_marginRight="5dp"
+                        android:textStyle="bold"
+                        android:text="Tidak"
+                        android:textColor="#8B1717"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textSize="12dp"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:text="perlu saluran permukaan samping dan median"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <RadioButton
+                    android:textSize="12dp"
+                    android:textColor="@android:color/background_dark"
+                    android:textStyle="bold"
+                    android:text="Perlu saluran permukaan samping dan median"
+                    android:id="@+id/formSaluranPerlu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/formSaluranForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/formSaluranDrain1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:text="Jenis Saluran : "
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="#d9d9d9"
+                            app:cardCornerRadius="2dp">
+
+                            <TextView
+                                android:id="@+id/formSaluranJenis"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="Tanah"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Jenis Penampang"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        app:cardBackgroundColor="#d9d9d9"
+                        app:cardCornerRadius="3dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2.5dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="2.5dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <RadioButton
+                                        android:id="@+id/formSaluranTrapesium"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal" />
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:cardCornerRadius="5dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="150dp"
+                                            android:src="@drawable/penampang_trapesium" />
+                                    </androidx.cardview.widget.CardView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Trapesium"
+                                        android:textAlignment="center"
+                                        android:textColor="#4159BE"
+                                        android:textSize="12dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="2.5dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <RadioButton
+                                        android:id="@+id/formSaluranSegitiga"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal" />
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:cardCornerRadius="5dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="150dp"
+                                            android:src="@drawable/penampang_segitiga" />
+                                    </androidx.cardview.widget.CardView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Segitiga"
+                                        android:textAlignment="center"
+                                        android:textColor="#4159BE"
+                                        android:textSize="12dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2.5dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="2.5dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <RadioButton
+                                        android:id="@+id/formSaluranSegiEmpat"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal" />
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:cardCornerRadius="5dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="150dp"
+                                            android:src="@drawable/penampang_kotak" />
+                                    </androidx.cardview.widget.CardView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Segi empat"
+                                        android:textAlignment="center"
+                                        android:textColor="#4159BE"
+                                        android:textSize="12dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="2.5dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <RadioButton
+                                        android:id="@+id/formSaluranLingkaran"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal" />
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:cardCornerRadius="5dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="150dp"
+                                            android:src="@drawable/penampang_setengah_lingkaran" />
+                                    </androidx.cardview.widget.CardView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:text="1/2 Lingkaran"
+                                        android:textAlignment="center"
+                                        android:textColor="#4159BE"
+                                        android:textSize="12dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="2"
+                        android:text="Lebar (b) : "
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="3"
+                            app:cardCornerRadius="5dp">
+
+                            <EditText
+                                android:id="@+id/formSaluranLebar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@android:color/background_light"
+                                android:imeOptions="actionDone"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:paddingLeft="10dp"
+                                android:textSize="14dp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Meter"
+                            android:textColor="#AA2929"
+                            android:textSize="11dp"
+                            android:textStyle="italic|bold" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="2"
+                        android:text="Tinggi/Dalam (h) : "
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="3"
+                            app:cardCornerRadius="5dp">
+
+                            <EditText
+                                android:id="@+id/formSaluranDalam"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@android:color/background_light"
+                                android:imeOptions="actionDone"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:paddingLeft="10dp"
+                                android:textSize="14dp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Meter"
+                            android:textColor="#AA2929"
+                            android:textSize="11dp"
+                            android:textStyle="italic|bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/formSaluranDrain2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="2"
+                            android:text="Tinggi Muka Air (y) : "
+                            android:textAlignment="viewEnd"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="3"
+                                app:cardCornerRadius="5dp">
+
+                                <EditText
+                                    android:id="@+id/formSaluranAir"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:background="@android:color/background_light"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="4"
+                                    android:paddingLeft="10dp"
+                                    android:textSize="14dp" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Meter"
+                                android:textColor="#AA2929"
+                                android:textSize="11dp"
+                                android:textStyle="italic|bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="2"
+                            android:text="Tinggi Sedimen : "
+                            android:textAlignment="viewEnd"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="3"
+                                app:cardCornerRadius="5dp">
+
+                                <EditText
+                                    android:id="@+id/formSaluranSedimen"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:background="@android:color/background_light"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="4"
+                                    android:paddingLeft="10dp"
+                                    android:textSize="14dp" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Meter"
+                                android:textColor="#AA2929"
+                                android:textSize="11dp"
+                                android:textStyle="italic|bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:text="Jenis Konstruksi : "
+                            android:textAlignment="viewEnd"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:id="@+id/formSaluranKonstruksiText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="2.5">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:cardBackgroundColor="#d9d9d9"
+                                app:cardCornerRadius="2dp">
+
+                                <TextView
+                                    android:id="@+id/formSaluranKonstruksiTextValue"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:text="Tanah"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </RelativeLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/formSaluranKOnstruksiSpinner"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="2.5"
+                            app:cardCornerRadius="5dp">
+
+                            <Spinner
+                                android:id="@+id/formSaluranKonstruksiSpinnerValue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1.5"
+                            android:text="Kondisi Saluran : "
+                            android:textAlignment="viewEnd"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="2.5"
+                                app:cardCornerRadius="5dp">
+
+                                <Spinner
+                                    android:id="@+id/formSaluranKondisi"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp" />
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                app:cardBackgroundColor="#d9d9d9"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/formSaluranRecycle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="4"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"></androidx.recyclerview.widget.RecyclerView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/formSaluranAdd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="5dp"
+                        app:cardBackgroundColor="#A29E9E"
+                        app:cardCornerRadius="3dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/formSaluranFoto"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/ic_menu_camera" />
+
+                            <ImageView
+                                android:id="@+id/formSaluranGaleri"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/ic_menu_gallery" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/formSaluranSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="30dp"
+                    app:cardBackgroundColor="#4159BE"
+                    app:cardCornerRadius="5dp">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="Save"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

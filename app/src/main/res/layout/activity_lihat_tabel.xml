@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.roadmanagement.kaltara.Tabel.LihatTabel">
+
+
+    <!--<android.support.v4.view.ViewPager
+        android:id="@+id/vpPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/pager_header"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:textSize="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="top"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp" />
+
+    </android.support.v4.view.ViewPager>-->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarsearch"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/icon_app"
+                android:layout_width="50dp"
+                android:id="@+id/logoku"
+                android:layout_marginRight="20dp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_weight="4"
+                android:layout_margin="7dp"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/judultoolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="LIHAT TABEL"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18dp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="1"
+                android:layout_margin="7dp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/ltabeltipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/background_light"
+                    android:text="003"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/halamantabel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

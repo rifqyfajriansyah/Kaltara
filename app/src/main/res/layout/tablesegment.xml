@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_marginBottom="7dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="#9fa0a3"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:id="@+id/tablesegmentsta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:text="Perkotaan"
+            android:textAlignment="center"
+            android:textColor="#4159BE"
+            android:textSize="11dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/tablesegmentsegment"
+            android:text="999"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tablesegmentkm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="3dp"
+            android:textAlignment="center"
+            android:textColor="#AA2929"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <LinearLayout
+
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/tablekanansegment"
+                android:layout_width="80dp"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/tablesegmentjumlah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="20"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/tablesegmentvertikal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|top"
+                    android:text="Perkotaan"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="3dp"
+                    android:textStyle="bold"
+                    android:id="@+id/tablesegmenthorizontal"
+                    android:text="Perkotaan"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:textSize="11dp"
+                    android:textColor="@android:color/background_dark"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="#98755511"
+                app:cardCornerRadius="5dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tablekirisegment"
+                android:layout_width="80dp"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/tablesegmentjumlahs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="20"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:id="@+id/tablesegmentvertikals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|top"
+                    android:text="Perkotaan"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:id="@+id/tablesegmenthorizontals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="3dp"
+                    android:text="Perkotaan"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
